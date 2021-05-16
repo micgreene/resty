@@ -1,9 +1,11 @@
-import './footer.css';
+import './footer.scss';
 
 function Footer() {
   return (
     <footer>
-      &copy; 2021 Code Fellows
+      <div id="foot-text">
+        &copy; 2021 Code Fellows
+      </div>
     </footer>
   )
 }
