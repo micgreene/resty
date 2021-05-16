@@ -3,8 +3,8 @@
 Codefellows 401 JavaScript
 
 ## Overview
-- React App: Component Based UI
 
+- React App: Component Based UI
 
 - **Business Requirements**
 
@@ -46,29 +46,29 @@ Codefellows 401 JavaScript
     - Tests will be runnable locally
     - Deployment to GitHub Pages using an Action
 
- - **Development Process, Milestones**
-  - Phase 1: Application Setup
-    - Basic React Application
-    - Scaffolding
-    - Basic State
-    - Rendering
+- **Development Process, Milestones**
+- Phase 1: Application Setup
+  - Basic React Application
+  - Scaffolding
+  - Basic State
+  - Rendering
 
-  - Phase 2: Testing and Deployment
-    - Testing of React components and applications
-    - Uses best practices for testing Behaviors and Acceptance Criteria
-    - Integrates with an online CI framework
-    - Deploy to GitHub Pages, Netlify, and/or AWS
+- Phase 2: Testing and Deployment
+  - Testing of React components and applications
+  - Uses best practices for testing Behaviors and Acceptance Criteria
+  - Integrates with an online CI framework
+  - Deploy to GitHub Pages, Netlify, and/or AWS
 
-  - Phase 3: State and Props
-    - Create multiple components to handle each aspect of the Application
-    - Sharing state and behaviors between components
-    - Basic layout and styling
+- Phase 3: State and Props
+  - Create multiple components to handle each aspect of the Application
+  - Sharing state and behaviors between components
+  - Basic layout and styling
 
-  - Phase 4: Fit and Finish
-    - Incorporate the spinner, using conditional rendering
-    - App is Fully Tested
-    - App is Fully Documented
-    - RESTy is Deployed and publicly available
+- Phase 4: Fit and Finish
+  - Incorporate the spinner, using conditional rendering
+  - App is Fully Tested
+  - App is Fully Documented
+  - RESTy is Deployed and publicly available
 
 ### Authors
 
@@ -79,6 +79,3 @@ Codefellows 401 JavaScript
 - local server: http://localhost:3000/
 
 #### `.env` requirements (where applicable)
-
-
-
