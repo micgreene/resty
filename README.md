@@ -1,10 +1,11 @@
-# Lab 26 - React App
+# Lab 27 - Props and States
 
 Codefellows 401 JavaScript
 
 ## Overview
 
 - React App: Component Based UI
+  - RESTy Phase 2: Connect RESTy with APIs, running live requests
 
 - **Business Requirements**
 
@@ -47,28 +48,20 @@ Codefellows 401 JavaScript
     - Deployment to GitHub Pages using an Action
 
 - **Development Process, Milestones**
-- Phase 1: Application Setup
-  - Basic React Application
-  - Scaffolding
-  - Basic State
-  - Rendering
+- **Phase 2 Requirements**
+  - In phase 2, we will be connecting RESTy to live APIs, fetching and displaying remote data. Our primary focus will be to service GET requests
 
-- Phase 2: Testing and Deployment
-  - Testing of React components and applications
-  - Uses best practices for testing Behaviors and Acceptance Criteria
-  - Integrates with an online CI framework
-  - Deploy to GitHub Pages, Netlify, and/or AWS
+- **The following user stories detail the major functionality for this phase of the project:**
+  - As a user, I want to enter the URL to an API and issue a GET request so that I can retrieve it’s data
+  - As a user, I want to see the results returned from an API request in my browser in a readable format
 
-- Phase 3: State and Props
-  - Create multiple components to handle each aspect of the Application
-  - Sharing state and behaviors between components
-  - Basic layout and styling
-
-- Phase 4: Fit and Finish
-  - Incorporate the spinner, using conditional rendering
-  - App is Fully Tested
-  - App is Fully Documented
-  - RESTy is Deployed and publicly available
+- **Application Flow:**
+  - User enters an API URL
+  - Chooses a REST Method
+  - Clicks the “Go” button
+  - Application fetches data from the URL given, with the method specified
+  - Displays the response headers and results separately
+  - Both headers and results should be “pretty printed” JSON
 
 ### Authors
 
@@ -76,6 +69,7 @@ Codefellows 401 JavaScript
 
 ### Links and Resources
 
-- local server: http://localhost:3000/
+- local server: 'http://localhost:3000/'
+- GitHub Pages: 'https://micgreene.github.io/resty/'
 
 #### `.env` requirements (where applicable)
