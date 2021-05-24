@@ -1,25 +1,48 @@
 import React from 'react';
 
+import axios from 'axios';
+
 import Header from './header/header.js';
 import Form from './form/form.js';
+import Results from './results.js';
 import Footer from './footer/footer.js';
-
-// let something = new Header();
-// let output = something.render();
-// output goes into #root
 
 class App extends React.Component {
 
-  // constructor(props) {
-  //   super(props);
-  // }
+  constructor(props) {
+    super(props);
+    this.state = {
+      results: {},
+      url: '',
+      method: ''
+    };
+  }
+
+  fetchData = async (userData) => {
+    const method = userData.method || 'get';
+    const url = userData.url;
+    const body = userData.data || {};
+
+    const response = await axios({
+      method: method,
+      url: url,
+      body: body
+    });
+
+    const results = response.data;
+
+    this.setState({ results });
+  }
 
   render() {
     return (
       <>
         <Header />        
         <div>
-          <Form />          
+          <Form apiHandler={this.fetchData} />          
+        </div>
+        <div>
+          <Results data={this.state.results} />          
         </div>
         <Footer />
       </>

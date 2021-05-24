@@ -14,15 +14,16 @@ class Form extends React.Component {
 
   handleUrlInput = async (event) => {
     event.preventDefault();
-    console.log(event.target.value);
     await this.setState({ url: this.urlElement.current.value });
 
+    await this.props.apiHandler(this.state);
+    
     //clear the input bar after user submits
     this.urlElement.current.value = null;
   }
 
   saveMethod =  (event) => {
-    let { name, value } = event.target;
+    let { value } = event.target;
     
      this.setState({ method: value });
   }
